@@ -68,9 +68,9 @@
             -webkit-overflow-scrolling: touch;
         }
         .image-slider img {
-            flex: 0 0 80%;
-            max-width: 450px;
-            height: 280px;
+            flex: 0 0 auto;
+            height: 450px;
+            aspect-ratio: 9 / 16;      /* スマホの縦長比率 */
             object-fit: cover;
             border-radius: 12px;
             scroll-snap-align: center;
