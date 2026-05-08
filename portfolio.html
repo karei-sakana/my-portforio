@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanon Negishi Portfolio</title>
+    <style>
+        /* 全体のフォントと余白 */
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        header {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        section {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            border-left: 5px solid #007bff;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+        .work-item {
+            margin-bottom: 40px;
+        }
+        .work-item h3 {
+            margin-top: 0;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* --- 横スクロールスライダーのスタイル --- */
+        .image-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 15px;
+            padding: 10px 0;
+            margin: 15px 0;
+            -webkit-overflow-scrolling: touch;
+        }
+        .image-slider img {
+            flex: 0 0 80%;
+            max-width: 450px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+            scroll-snap-align: center;
+            background-color: #eee;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+        /* スクロールバーのデザイン */
+        .image-slider::-webkit-scrollbar {
+            height: 8px;
+        }
+        .image-slider::-webkit-scrollbar-thumb {
+            background: #007bff;
+            border-radius: 10px;
+        }
+        .image-slider::-webkit-scrollbar-track {
+            background: #eee;
+        }
+        /* ---------------------------------- */
+
+        .point-box {
+            background-color: #eef7ff;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+        .point-title {
+            font-weight: bold;
+            color: #0056b3;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .link-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .link-list li a {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+        .link-list li a:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>根岸 栞音 / Kanon Negishi</h1>
+        <p>大阪電気通信大学 情報工学科 3年生</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>ご覧いただきありがとうございます。大阪電気通信大学 情報工学科3年生の根岸栞音です。身近な社会問題をITの力で解決することに興味を持ち、日々開発を行っています。</p>
+            <p><strong>技術スタック:</strong><br>
+            Python (2020-), C++ (2024-), HTML/CSS (2020-)</p>
+        </section>
+
+        <section id="works">
+            <h2>Works</h2>
+            
+            <div class="work-item">
+                <h3>🛡️ 詐欺被害防止シミュレーションシステム</h3>
+                <p>AIを活用したチャット形式の教育システム。AIが詐欺師役となり、ユーザーはチャットを通じて詐欺の手口を擬似体験します。共同開発において、主にAIの対話ロジックと選択肢分岐のコーディングを担当しました。</p>
+                
+                <div class="image-slider">
+                    <img src="C:\Users\p-user\Desktop\image\スクリーンショット 2026-05-01 164643.png" alt="電話画面">
+                    <img src="C:\Users\p-user\Desktop\image\スクリーンショット 2026-05-01 164659.png" alt="詐欺の種類選択">
+                    <img src="C:\Users\p-user\Desktop\image\スクリーンショット 2026-05-01 164709.png" alt="プレイヤー名選択">
+                    <img src="C:\Users\p-user\Desktop\image\スクリーンショット 2026-05-01 164737.png" alt="5択画面">
+                </div>
+
+                <div class="point-box">
+                    <span class="point-title">💡 こだわった点</span>
+                    自由入力ではなく「5つの選択肢形式」を採用。初めての人でも迷わず、ゲーム感覚で挑戦できるようにUIを設計しました。また、回答に応じて「被害ゲージ」を変動させ、視覚的な緊張感を演出しました。
+                </div>
+
+                <ul class="link-list">
+                    <li><a href="https://www.osakac.ac.jp/news/2025/3664" target="_blank">📰 大学HP（掲載記事）</a></li>
+                </ul>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+
+            <div class="work-item">
+                <h3>📢 誘拐防止！大声採点システム</h3>
+                <p>小学生を対象とした、誘拐被害防止のための防犯訓練ツール。不審者に遭遇した際、実際に大きな声を出す練習ができます。共同開発メンバーとして、主に企画とシステム全体のロジック検討に携わりました。</p>
+
+                <div class="point-box">
+                    <span class="point-title">💡 こだわった点</span>
+                    「怖い訓練」ではなく「楽しい練習」にするため、カラオケのような採点・ランキング機能を搭載。子供たちが自発的に防犯のための発声練習に取り組めるようにこだわりました。
+                </div>
+
+                <ul class="link-list">
+                    <li><a href="https://www.osakac.ac.jp/news/2026/3816" target="_blank">📰 大学HP（掲載記事）</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>お問い合わせは下記メールアドレスまでお願いいたします。</p>
+            <p>📩 <a href="mailto:kanon_eiji25251188@icloud.com">kanon_eiji25251188@icloud.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 根岸栞音</p>
+    </footer>
+
+</body>
+</html>
